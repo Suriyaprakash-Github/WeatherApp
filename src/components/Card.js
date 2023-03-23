@@ -7,10 +7,12 @@ const Card = () => {
 
   if (cityCtx.forecast.length !== 0) {
     console.log(cityCtx.forecast);
+    let c = 0;
 
     data = cityCtx.forecast[0].hour.map((hr) => {
       return (
-        <div key={hr.time_epoch} className="card_header">
+        // <div className={`${"a" + c++}`}>
+        <div key={hr.time_epoch} className={`card_header ${"a" + c++}`}>
           <div className="month">
             <p>
               {new Date(hr.time).toLocaleString("default", { month: "long" })},
@@ -36,6 +38,7 @@ const Card = () => {
             <img src={hr.condition.icon} alt="" />
           </div>
         </div>
+        // </div>
       );
     });
   }

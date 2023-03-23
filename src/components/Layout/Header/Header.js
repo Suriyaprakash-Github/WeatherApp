@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="header_element">
       <div>Weather App</div>
-      <div>
+      <div className="header_innerdiv">
         <Link to="/">Search Location</Link>
         <Link to="detail">Weather Detail</Link>
       </div>

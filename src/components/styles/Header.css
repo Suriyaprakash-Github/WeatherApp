@@ -5,3 +5,27 @@
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 40rem) {
+  .header_element {
+    flex-direction: column;
+  }
+}
+
+.header_element div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  margin: 0.5rem;
+}
+.header_element a {
+  margin: 0.5rem;
+}
+
+@media (max-width: 40rem) {
+  .header_element div {
+    flex-direction: column;
+    font-size: smaller;
+  }
+}
