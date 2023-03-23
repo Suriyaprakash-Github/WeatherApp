@@ -6,6 +6,7 @@ import "./styles/Search.css";
 
 export const SearchForm = () => {
   const cityEntered = useRef();
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const cityCtx = useContext(CityContext);
 
   const redirect = useNavigate();
@@ -15,7 +16,7 @@ export const SearchForm = () => {
       setTimeout(() => {
         axios
           .get(
-            ` http://api.weatherapi.com/v1/search.json?key=42e1fcddf9104958a63160856232203&q=${cityEntered.current.value}`
+            ` http://api.weatherapi.com/v1/search.json?key=${API_KEY}&q=${cityEntered.current.value}`
           )
           .then((res) => {
             setReceivedCities(res.data);

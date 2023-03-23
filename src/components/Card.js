@@ -11,7 +11,6 @@ const Card = () => {
 
     data = cityCtx.forecast[0].hour.map((hr) => {
       return (
-        // <div className={`${"a" + c++}`}>
         <div key={hr.time_epoch} className={`card_header ${"a" + c++}`}>
           <div className="month">
             <p>
@@ -38,7 +37,6 @@ const Card = () => {
             <img src={hr.condition.icon} alt="" />
           </div>
         </div>
-        // </div>
       );
     });
   }
@@ -57,26 +55,3 @@ const Card = () => {
 };
 
 export default Card;
-
-// {console.log(
-//   new Date(hr.time).toLocaleString("default", { month: "long" })
-// )}
-
-// {console.log(
-//   new Date(hr.time).toLocaleString("default", {
-//     weekday: "long",
-//   })
-// )}
-
-// {console.log(
-//   new Date(hr.time).toLocaleString("default", {
-//     day: "numeric",
-//   })
-// )}
-
-// {console.log(
-//   new Date(hr.time).toLocaleString("default", {
-//     hour: "2-digit",
-//     minute: "2-digit",
-//   })
-// )}

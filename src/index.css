@@ -4,9 +4,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: linear-gradient(to bottom right, #87a3a3, #ac8d9a); */
-  /* background-repeat: no-repeat; */
-  /* min-height: 95vh; */
   background-color: rgb(25, 26, 26);
   margin: 0 8rem;
 }
