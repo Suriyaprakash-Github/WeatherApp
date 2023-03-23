@@ -1,11 +1,42 @@
-.header_div {
-  display: flex;
-  flex-wrap: wrap;
+.card_container {
+  color: white;
+  text-align: center;
 }
 
+/* .card_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} */
+
 .card_header {
+  border: 1px solid gray;
+  padding: 1rem;
   margin: 0.5rem;
-  border: 1px solid black;
-  padding: 0.5rem;
-  width: fit-content;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(20, 20, 20);
+}
+
+.card_header:hover {
+  scale: 1.02;
+}
+@media (max-width: 50rem) {
+  .card_header {
+    flex-direction: column;
+  }
+}
+
+.month {
+  border: 1px solid rgb(80, 1, 80);
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+}
+
+img {
+  background-color: rgba(65, 65, 65, 0.137);
+  border-radius: 0.4rem;
 }

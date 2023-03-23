@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import classes from "./Header.module.css";
+import "./../../styles/Header.css";
 const Header = () => {
   return (
-    <header className={classes.header}>
+    <header className="header_element">
       <div>Weather App</div>
       <div>
         <Link to="/">Search Location</Link>

@@ -1,0 +1,32 @@
+.search_container {
+  color: white;
+  /* margin: auto auto; */
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+}
+.search_container h1 {
+  margin: 0 auto;
+}
+
+.search_container form {
+  padding: 1rem;
+}
+
+.search_container button {
+  background-color: rgba(128, 128, 128, 0.534);
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.search_container button:hover {
+  cursor: pointer;
+  scale: 0.98;
+}

@@ -2,6 +2,7 @@ import React, { useRef, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import CityContext from "../store/CityContext";
+import "./styles/Search.css";
 
 export const SearchForm = () => {
   const cityEntered = useRef();
@@ -34,24 +35,27 @@ export const SearchForm = () => {
 
   return (
     <>
-      <h1>SearchForm</h1>
-      <form onSubmit={submitHandler}>
-        <label htmlFor="city"> Enter City Name</label>
-        <input
-          type="text"
-          id="city"
-          ref={cityEntered}
-          onChange={dynamicHandler}
-        />
-      </form>
-      {receivedCities.map((city) => {
-        return (
-          <button key={city.id} onClick={clickHandler.bind(null, city)}>
-            country : {city.country}, id : {city.id} lat : {city.lat} lon :
-            {city.lon} name :{city.name}
-          </button>
-        );
-      })}
+      <div className="search_container">
+        <h1>SearchForm</h1>
+        <div>
+          <form onSubmit={submitHandler}>
+            <label htmlFor="city"> Enter City Name: </label>
+            <input
+              type="text"
+              id="city"
+              ref={cityEntered}
+              onChange={dynamicHandler}
+            />
+          </form>
+        </div>
+        {receivedCities.map((city) => {
+          return (
+            <button key={city.id} onClick={clickHandler.bind(null, city)}>
+              {city.name}, {city.country}
+            </button>
+          );
+        })}
+      </div>
     </>
   );
 };
