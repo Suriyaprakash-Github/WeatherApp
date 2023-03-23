@@ -1,0 +1,11 @@
+.header_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_header {
+  margin: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: fit-content;
+}
