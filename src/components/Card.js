@@ -6,7 +6,6 @@ const Card = () => {
   const cityCtx = useContext(CityContext);
 
   if (cityCtx.forecast.length !== 0) {
-    console.log(cityCtx.forecast);
     let c = 0;
 
     data = cityCtx.forecast[0].hour.map((hr) => {
